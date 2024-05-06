@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 function App() {
   const [googleId, setGoogleId] = useState('');
   const handleAuth = () => {
-    window.location.href = 'http://localhost:3001/auth/google';
+    window.location.href = 'https://youtube-test-35lc.onrender.com/auth/google';
   };
 console.log(googleId)
 
@@ -21,7 +21,7 @@ console.log(googleId)
 
   const handleUpload = async () => {
     
-    const response = await fetch('http://localhost:3001/uploadVideo', {
+    const response = await fetch('https://youtube-test-35lc.onrender.com/uploadVideo', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
